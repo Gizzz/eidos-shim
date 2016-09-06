@@ -1,0 +1,127 @@
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+body.index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../img/bg_eidos.jpg) no-repeat 50% 0, url(../img/bg_grey.png) repeat;
+}
+body.index .panel {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 109px;
+  width: 1024px;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  opacity: .85;
+  box-shadow: 0 17px 45px -1px rgba(0, 0, 0, 0.15);
+}
+body.index .panel h1 {
+  font-size: 29px;
+}
+body.index .panel .links {
+  margin-top: 60px;
+}
+body.index .panel .links:before,
+body.index .panel .links:after {
+  content: " ";
+  display: table;
+}
+body.index .panel .links:after {
+  clear: both;
+}
+body.index .panel .links .item {
+  display: block;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+body.index .panel .links .item:nth-child(1) {
+  position: relative;
+  left: 20px;
+}
+body.index .panel .links .item:nth-child(3) {
+  position: relative;
+  left: -20px;
+}
+body.index .panel .links .item .image {
+  width: 100%;
+  height: 73px;
+  background: url(../img/eidos_logo.png) no-repeat 50% 50%;
+  transition: all .25s;
+}
+body.index .panel .links .item h2 {
+  margin-top: 25px;
+  color: #666666;
+  transition: all .25s;
+}
+body.index .panel .links .item p {
+  display: inline-block;
+  margin-top: 7px;
+  font-size: 20px;
+  color: #666666;
+}
+body.index .panel .links .item:hover .image {
+  transform: scale(1.1);
+}
+body.index .panel .links .item:hover p {
+  text-decoration: underline;
+}
+body.index .panel .links .item:nth-child(1):hover h2 {
+  color: #3399cc;
+}
+body.index .panel .links .item:nth-child(2):hover h2 {
+  color: #ffcc00;
+}
+body.index .panel .links .item:nth-child(3):hover h2 {
+  color: #006600;
+}
+body.index .panel .bottom-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 29px;
+  width: 100%;
+  font-size: 13px;
+  color: #888;
+}
+body.index .panel .bottom-line a {
+  color: #888;
+}
+body.index .panel .bottom-line a:hover {
+  text-decoration: underline;
+}
